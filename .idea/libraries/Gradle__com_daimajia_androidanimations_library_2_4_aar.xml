@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.daimajia.androidanimations:library:2.4@aar">
+    <CLASSES>
+      <root url="jar://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/68c4d3daa30501c8e73b82f598ec9092/jetified-library-2.4/jars/classes.jar!/" />
+      <root url="file://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/68c4d3daa30501c8e73b82f598ec9092/jetified-library-2.4/res" />
+      <root url="file://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/68c4d3daa30501c8e73b82f598ec9092/jetified-library-2.4/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/WindowLaucher/windows-launcher/.gradle/caches/modules-2/files-2.1/com.daimajia.androidanimations/library/2.4/aec1cff1fe060724a1bb50fe5c5274409f9aabd3/library-2.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/WindowLaucher/windows-launcher/.gradle/caches/modules-2/files-2.1/com.daimajia.androidanimations/library/2.4/d3b35f8478c2c7e6225c8dcde48caeeecc9dc5b3/library-2.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

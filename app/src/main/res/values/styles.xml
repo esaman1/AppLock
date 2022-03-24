@@ -1,0 +1,28 @@
+<resources>
+
+    <style name="Widget.Theme.AppLocker.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="Widget.Theme.AppLocker.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+    <style name="StyleDialog" parent="Base.Theme.AppCompat.Light.Dialog.Alert">
+        <item name="windowFixedWidthMajor">85%</item>
+        <item name="windowFixedWidthMinor">85%</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:backgroundDimAmount">0.3</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>

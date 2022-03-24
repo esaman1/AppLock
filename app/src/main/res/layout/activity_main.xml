@@ -1,0 +1,99 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_start_app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/bg_splash"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="1"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/fingerprint" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/condensed"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/smart_applock"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_23sdp"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/animationView"
+        app:layout_constraintWidth_percent="0.5" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_start"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_bottom_start"
+        android:padding="@dimen/_7sdp"
+        android:text="@string/start_use"
+        android:textColor="@color/color_363636"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/layout_privacy_policy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_privacy_policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/txt_privacy_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="@string/privacy_policy"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_3sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="@string/privacy_policys"
+            android:textColor="@color/color_39A1FF"
+            app:layout_constraintStart_toEndOf="@+id/txt_privacy_policy"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

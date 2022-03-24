@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_031B3C">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_031B3C"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_back_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/state_click_back"
+            android:padding="@dimen/_5sdp"
+            app:srcCompat="@drawable/ic_back_activity_lock_app"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/font"
+            android:gravity="center"
+            android:text="@string/Notification"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_19sdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ic_back_notification"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.516" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_notification"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        app:layout_constraintBottom_toTopOf="@+id/banner"
+        app:layout_constraintTop_toBottomOf="@+id/detail">
+
+        <TextView
+            android:id="@+id/txt_action_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/state_click"
+            android:fontFamily="@font/font"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:text="@string/action_center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_clear_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/state_click"
+            android:fontFamily="@font/font"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:text="@string/clear_all"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rclNotification"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            android:padding="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_action_center"
+            tools:listitem="@layout/layout_item_detail_notification" />
+
+        <TextView
+            android:id="@+id/txt_no_notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_new_notifications"
+            android:textColor="@color/color_959090"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.gms.ads.ez.BannerAd
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

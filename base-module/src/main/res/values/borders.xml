@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- Border radius 2 -->
+  <dimen name="tokenBorderRadius02">@dimen/_2sdp</dimen>
+  <!-- Border radius 4 -->
+  <dimen name="tokenBorderRadius04">@dimen/_3sdp</dimen>
+  <!-- Border radius 6 -->
+  <dimen name="tokenBorderRadius06">@dimen/_4sdp</dimen>
+  <!-- Border radius 8 -->
+  <dimen name="tokenBorderRadius08">@dimen/_6sdp</dimen>
+  <!-- Border radius 10 -->
+  <dimen name="tokenBorderRadius10">@dimen/_8sdp</dimen>
+  <!-- Border radius 12 -->
+  <dimen name="tokenBorderRadius12">@dimen/_10sdp</dimen>
+  <!-- Border radius 14 -->
+  <dimen name="tokenBorderRadius14">@dimen/_11sdp</dimen>
+  <!-- Border radius 16 -->
+  <dimen name="tokenBorderRadius16">@dimen/_13sdp</dimen>
+  <!-- Border radius 18 -->
+  <dimen name="tokenBorderRadius18">@dimen/_14sdp</dimen>
+  <!-- Border radius 20 -->
+  <dimen name="tokenBorderRadius20">@dimen/_16sdp</dimen>
+  <!-- Border radius 22 -->
+  <dimen name="tokenBorderRadius22">@dimen/_18sdp</dimen>
+  <!-- Border radius 24 -->
+  <dimen name="tokenBorderRadius24">@dimen/_19sdp</dimen>
+
+  <!-- Border cyan 100 -->
+  <color name="tokenBorderCyan100">#17adb0</color>
+  <!-- Border yellow 100 -->
+  <color name="tokenBorderYellow100">#ffbe41</color>
+  <!-- Border red 100 -->
+  <color name="tokenBorderRed100">#ff645c</color>
+  <!-- Border dark 10 -->
+  <color name="tokenBorderDark10">#e9e9e9</color>
+  <!-- Border dark 20 -->
+  <color name="tokenBorderDark20">#d3d3d3</color>
+  <!-- Border dark 40 -->
+  <color name="tokenBorderDark40">#a7a7a7</color>
+  <!-- Border white -->
+  <color name="tokenBorderWhite">#ffffff</color>
+</resources>

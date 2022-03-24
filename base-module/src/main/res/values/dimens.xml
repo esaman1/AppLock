@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Font size-->
+    <dimen name="tokenFontSize26">@dimen/_22sdp</dimen>
+    <dimen name="tokenFontSize24">@dimen/_20sdp</dimen>
+    <dimen name="tokenFontSize22">@dimen/_18sdp</dimen>
+    <dimen name="tokenFontSize18">@dimen/_15sdp</dimen>
+    <dimen name="tokenFontSize16">@dimen/_13sdp</dimen>
+    <dimen name="tokenFontSize14">@dimen/_12sdp</dimen>
+    <dimen name="tokenFontSize13">@dimen/_11sdp</dimen>
+    <dimen name="tokenFontSize12">@dimen/_10sdp</dimen>
+    <dimen name="tokenFontSize10">@dimen/_8sdp</dimen>
+
+    <!--Height-->
+    <dimen name="tokenStatusBarHeight">@dimen/_40sdp</dimen>
+
+    <!-- Spacing 0 -->
+    <dimen name="tokenSpacing00">0dp</dimen>
+    <!-- Spacing 2 -->
+    <dimen name="tokenSpacing02">@dimen/_2sdp</dimen>
+    <!-- Spacing 4 -->
+    <dimen name="tokenSpacing04">@dimen/_3sdp</dimen>
+    <!-- Spacing 8 -->
+    <dimen name="tokenSpacing08">@dimen/_6sdp</dimen>
+    <!-- Spacing 12 -->
+    <dimen name="tokenSpacing12">@dimen/_10sdp</dimen>
+    <!-- Spacing 16 -->
+    <dimen name="tokenSpacing16">@dimen/_13sdp</dimen>
+    <!-- Spacing 24 -->
+    <dimen name="tokenSpacing24">@dimen/_19sdp</dimen>
+    <!-- Spacing 32 -->
+    <dimen name="tokenSpacing32">@dimen/_26sdp</dimen>
+    <!-- Spacing 40 -->
+    <dimen name="tokenSpacing40">@dimen/_32sdp</dimen>
+    <!-- Spacing 48 -->
+    <dimen name="tokenSpacing48">@dimen/_38sdp</dimen>
+    <!-- Spacing 56 -->
+    <dimen name="tokenSpacing56">@dimen/_45sdp</dimen>
+    <!-- Spacing 64 -->
+    <dimen name="tokenSpacing64">@dimen/_51sdp</dimen>
+
+    <!--    Grids -->
+    <dimen name="gridLeft">@dimen/_13sdp</dimen>
+    <dimen name="gridTop">@dimen/_13sdp</dimen>
+    <dimen name="gridRight">@dimen/_13sdp</dimen>
+    <dimen name="gridBottom">@dimen/_13sdp</dimen>
+
+    <!--    Cell-->
+    <dimen name="tokenCellHeight40">@dimen/_40sdp</dimen>
+
+    <!--    Height -->
+</resources>

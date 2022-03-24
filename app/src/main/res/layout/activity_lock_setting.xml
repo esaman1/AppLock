@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bg_lock"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/theme_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/background_lock_app" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp">
+
+        <RelativeLayout
+            android:id="@+id/ads_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/text_lock"
+            app:layout_constraintHeight_percent="0.34" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_icon_app"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            app:layout_constraintBottom_toTopOf="@+id/text_lock"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_lock"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:text="@string/enter_pattern"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            app:autoSizeMinTextSize="@dimen/_13sdp"
+            app:layout_constraintBottom_toTopOf="@+id/pattern_lock"
+            app:layout_constraintHeight_percent="0.08" />
+
+        <com.ezteam.applocker.widget.ViewPatternLockWindow
+            android:id="@+id/pattern_lock"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.58" />
+
+        <com.ezteam.applocker.widget.ViewLockPinWindow
+            android:id="@+id/pin_lock"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingBottom="@dimen/_15sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.58" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

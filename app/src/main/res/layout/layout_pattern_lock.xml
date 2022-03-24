@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.reginald.patternlockview.PatternLockView
+        android:id="@+id/lock_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:lock_autoLink="true"
+        app:lock_enableVibrate="false"
+        app:lock_lineColor="@color/white"
+        app:lock_lineCorrectColor="@color/white"
+        app:lock_lineErrorColor="@color/color_CC982D1F"
+        app:lock_lineWidth="5dp"
+        app:lock_nodeSize="@dimen/_45sdp"
+        app:lock_nodeTouchExpand="20dp"
+        app:lock_size="3"
+        app:lock_spacing="@dimen/_45sdp"
+        app:lock_vibrateTime="20" />
+</LinearLayout>

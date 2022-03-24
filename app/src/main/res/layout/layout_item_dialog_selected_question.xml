@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_15sdp"
+    android:background="@drawable/radius_item_select_lock"
+    android:padding="@dimen/_8sdp">
+
+    <RadioButton
+        android:checked="true"
+        android:id="@+id/radio"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:background="@drawable/custom_drawable_checkbox"
+        android:button="@null"
+        android:clickable="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <me.grantland.widget.AutofitTextView
+        android:paddingStart="@dimen/_32sdp"
+        android:paddingEnd="0dp"
+        android:text="@string/app_name"
+        android:fontFamily="@font/font"
+        android:textStyle="bold"
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/color_003463"
+        android:textSize="@dimen/_14sdp"
+        android:maxLines="1"
+        app:minTextSize="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

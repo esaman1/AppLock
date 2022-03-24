@@ -1,0 +1,101 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.ezteam.applocker"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation project(path: ':base-module')
+    implementation project(path: ':hiddencamera')
+    implementation project(path: ':patternlock')
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
+    implementation project(path: ':ads-module')
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    /*https://insert-koin.io/docs/quickstart/kotlin#setup*/
+    implementation "org.koin:koin-core:2.2.2"
+    implementation "org.koin:koin-android:2.2.2"
+    // Koin AndroidX ViewModel features
+    implementation "org.koin:koin-androidx-viewmodel:2.2.2"
+    // Koin AndroidX Fragment features
+    implementation "org.koin:koin-androidx-fragment:2.2.2"
+    /*https://github.com/intuit/sdp*/
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    //
+    implementation "com.orhanobut:hawk:2.0.1"
+    //
+    implementation 'me.grantland:autofittextview:0.2.1'
+    // Koin AndroidX Fragment features
+    //
+//    implementation 'com.reginald:patternlock:2.0.0'
+    // glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    implementation fileTree(dir: 'libs', include: ['commons-io-2.4.jar'])
+    // crop image
+    implementation 'com.github.yalantis:ucrop:2.2.6'
+    // lottie animation
+    def lottieVersion = "4.2.0"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+    //lifecycle
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.3.1"
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:2.3.1"
+    // finger pin
+    implementation "androidx.biometric:biometric:1.1.0"
+    // TutorialView
+}
+
+dependencies {
+    implementation project(path: ':biometricauth-rxjava3')
+    implementation project(path: ':spotlights')
+    implementation "androidx.multidex:multidex:2.0.1"
+    implementation 'com.google.android.gms:play-services-ads:20.2.0'
+    implementation 'com.flurry.android:analytics:12.11.0@aar'
+    implementation platform('com.google.firebase:firebase-bom:26.6.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-config:21.0.0'
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+}

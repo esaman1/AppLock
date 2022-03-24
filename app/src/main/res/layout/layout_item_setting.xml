@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_marginBottom="@dimen/_1sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_weight="10"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/img_ic"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_weight="2"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/ic_change_password" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:maxLines="1"
+            android:textColor="@color/color_363636"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            app:minTextSize="@dimen/_12sdp" />
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:paddingStart="0dp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:text="@string/app_name"
+            android:textColor="@color/color_A8A8A8"
+            android:textSize="@dimen/_12sdp"
+            app:minTextSize="@dimen/_9sdp" />
+    </LinearLayout>
+</LinearLayout>

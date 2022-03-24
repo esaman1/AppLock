@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ellipsis">&#8230;</string>
+    <string name="no_app_response">No application to perform this action</string>
+    <string name="share">Share</string>
+
+    <string name="just_now_time">just now</string>
+    <string name="minute_ago">%s minutes ago</string>
+    <string name="hour_ago">%s hours ago</string>
+    <string name="day_ago">%s days ago</string>
+    <string name="cant_open_file">Can\'t open this file</string>
+    <string name="rate_us">Rate us</string>
+    <string name="rate_us_message">Do you want to rate this application?Your support will help us to improve it.</string>
+    <string name="rate_now">Rate now</string>
+    <string name="remind_later">Remind me later</string>
+
+</resources>

@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "257361059801",
+    "project_id": "applock-ez-1",
+    "storage_bucket": "applock-ez-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257361059801:android:2c8ae27d1e34ec5f9743c8",
+        "android_client_info": {
+          "package_name": "com.ezmobi.applock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "257361059801-akv4kbdrq4orcrfsmje9jflkujn5nieq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-7WiLXlxJin2XVbgFID6-Ks1oSW3jZ7k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "257361059801-akv4kbdrq4orcrfsmje9jflkujn5nieq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257361059801:android:0869dac1309386be9743c8",
+        "android_client_info": {
+          "package_name": "com.ezteam.applocker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "257361059801-akv4kbdrq4orcrfsmje9jflkujn5nieq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-7WiLXlxJin2XVbgFID6-Ks1oSW3jZ7k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "257361059801-akv4kbdrq4orcrfsmje9jflkujn5nieq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

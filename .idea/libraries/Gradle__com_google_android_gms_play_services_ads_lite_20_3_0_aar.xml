@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-ads-lite:20.3.0@aar">
+    <CLASSES>
+      <root url="jar://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/76b0178688b58603ac7b81f12c6b33e8/jetified-play-services-ads-lite-20.3.0/jars/classes.jar!/" />
+      <root url="file://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/76b0178688b58603ac7b81f12c6b33e8/jetified-play-services-ads-lite-20.3.0/res" />
+      <root url="file://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/76b0178688b58603ac7b81f12c6b33e8/jetified-play-services-ads-lite-20.3.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/WindowLaucher/windows-launcher/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-ads-lite/20.3.0/462b65b473cf2cb3893d1750ce982dd281d039e/play-services-ads-lite-20.3.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

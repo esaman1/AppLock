@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: org.koin:koin-androidx-fragment:2.2.2@aar">
+    <CLASSES>
+      <root url="jar://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/881108fcf6bb979eeb0cb43c78b01c39/jetified-koin-androidx-fragment-2.2.2/jars/classes.jar!/" />
+      <root url="file://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/881108fcf6bb979eeb0cb43c78b01c39/jetified-koin-androidx-fragment-2.2.2/res" />
+      <root url="file://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/881108fcf6bb979eeb0cb43c78b01c39/jetified-koin-androidx-fragment-2.2.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/WindowLaucher/windows-launcher/.gradle/caches/modules-2/files-2.1/org.koin/koin-androidx-fragment/2.2.2/76e316e7d1027a7733e14ead287d070a3cf81c4f/koin-androidx-fragment-2.2.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/WindowLaucher/windows-launcher/.gradle/caches/modules-2/files-2.1/org.koin/koin-androidx-fragment/2.2.2/df49ed4a3db710de3b717cec130aa41f21f1c80e/koin-androidx-fragment-2.2.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

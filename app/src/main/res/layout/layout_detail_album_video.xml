@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcl_videos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/layout_hide"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:spanCount="3"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_hide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:weightSum="2"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/txt_select_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:background="@drawable/background_select_all"
+            android:fontFamily="@font/font"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/select_all"
+            android:textColor="@color/color_39A1FF"
+            android:textSize="@dimen/_12sdp"
+            app:minTextSize="@dimen/_10sdp" />
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/txt_restore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:background="@drawable/background_hide"
+            android:fontFamily="@font/font"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/restore"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            app:minTextSize="@dimen/_10sdp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

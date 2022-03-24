@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.flurry.android:analytics:12.11.0@aar">
+    <CLASSES>
+      <root url="jar://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/223d442abc13f40a0ecbed1e9770dd89/jetified-analytics-12.11.0/jars/classes.jar!/" />
+      <root url="file://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/223d442abc13f40a0ecbed1e9770dd89/jetified-analytics-12.11.0/res" />
+      <root url="file://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/223d442abc13f40a0ecbed1e9770dd89/jetified-analytics-12.11.0/AndroidManifest.xml" />
+      <root url="file://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/cbd70b08c08be47057d5b2f46ea6aa31/jetified-analytics-12.11.0/AndroidManifest.xml" />
+      <root url="jar://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/cbd70b08c08be47057d5b2f46ea6aa31/jetified-analytics-12.11.0/jars/classes.jar!/" />
+      <root url="file://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/cbd70b08c08be47057d5b2f46ea6aa31/jetified-analytics-12.11.0/res" />
+      <root url="file://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/3c3edcda84ed1e5e4e4e1d6522df1233/jetified-analytics-12.11.0/res" />
+      <root url="jar://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/3c3edcda84ed1e5e4e4e1d6522df1233/jetified-analytics-12.11.0/jars/classes.jar!/" />
+      <root url="file://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/3c3edcda84ed1e5e4e4e1d6522df1233/jetified-analytics-12.11.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

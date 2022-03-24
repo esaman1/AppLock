@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/radius_dialog_10"
+        android:padding="@dimen/_10sdp">
+
+        <me.grantland.widget.AutofitTextView
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:id="@+id/txt_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:maxLines="2"
+            android:text="@string/do_you_want_to_delete_the_photo"
+            android:textColor="@color/color_363636"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:minTextSize="@dimen/_12sdp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_content">
+
+            <TextView
+                android:id="@+id/btn_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:padding="@dimen/_3sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:text="@string/no"
+                android:textColor="@color/color_2C61CC"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/btn_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/font"
+                android:padding="@dimen/_3sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:text="@string/yes"
+                android:textColor="@color/color_2C61CC"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/btn_no"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

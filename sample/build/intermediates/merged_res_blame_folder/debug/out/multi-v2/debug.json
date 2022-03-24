@@ -1,0 +1,84 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\PC Dev 4\\AndroidStudioProjects\\app-locker\\sample\\build\\intermediates\\res\\merged\\debug\\values-w820dp-v13_values-w820dp-v13.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\PC Dev 4\\AndroidStudioProjects\\app-locker\\sample\\src\\main\\res\\values-w820dp\\dimens.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "295",
+                        "endColumns": "57",
+                        "endOffsets": "348"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "57",
+                        "endOffsets": "108"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\PC Dev 4\\AndroidStudioProjects\\app-locker\\sample\\build\\intermediates\\res\\merged\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\PC Dev 4\\AndroidStudioProjects\\app-locker\\sample\\src\\main\\res\\values\\dimens.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "90,149",
+                        "endColumns": "57,55",
+                        "endOffsets": "143,200"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,113",
+                        "endColumns": "57,55",
+                        "endOffsets": "108,164"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\PC Dev 4\\AndroidStudioProjects\\app-locker\\sample\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "17",
+                        "endColumns": "62",
+                        "endOffsets": "75"
+                    },
+                    "to": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "169",
+                        "endColumns": "62",
+                        "endOffsets": "227"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\PC Dev 4\\AndroidStudioProjects\\app-locker\\patternlock\\build\\intermediates\\packaged_res\\debug\\values\\values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "20",
+                        "endColumns": "24",
+                        "endOffsets": "1122"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "232",
+                        "endLines": "23",
+                        "endColumns": "24",
+                        "endOffsets": "1299"
+                    }
+                }
+            ]
+        }
+    ]
+}

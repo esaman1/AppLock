@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_target"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/_75sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/_70sdp"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:layout_constraintBottom_toTopOf="@+id/title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_intro" />
+
+        <me.grantland.widget.AutofitTextView
+            android:paddingEnd="@dimen/_15sdp"
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/font"
+            android:maxLines="1"
+            android:paddingStart="@dimen/_20sdp"
+            android:text="@string/protected_apps"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/custom_text"
+            app:minTextSize="@dimen/_15sdp" />
+
+        <me.grantland.widget.AutofitTextView
+            android:paddingEnd="@dimen/_15sdp"
+            android:id="@+id/custom_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:maxLines="1"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:text="@string/click_here_to_lock_your_application"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_got_it"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:minTextSize="@dimen/_15sdp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_got_it"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:background="@drawable/got_it"
+            android:text="@string/got_it"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="3.5:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.36" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

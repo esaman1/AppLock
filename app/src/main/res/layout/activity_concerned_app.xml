@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ConcernedApp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_031B3C"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <me.grantland.widget.AutofitTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_20sdp"
+            android:text="@string/concerned_apps_with_privacy_and_security"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.516"
+            app:minTextSize="@dimen/_11sdp"
+            tools:ignore="SpUsage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnProtected"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:background="@drawable/background_button_protected"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:shadowRadius="23"
+        android:text="@string/protect"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.187"
+        app:layout_constraintWidth_percent="0.7"
+        tools:layout_editor_absoluteX="22dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:overScrollMode="never"
+        android:paddingTop="@dimen/_5sdp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/btnProtected"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Sizing 1 -->
+    <dimen name="tokenSizing01">@dimen/_1sdp</dimen>
+    <!-- Sizing 2 -->
+    <dimen name="tokenSizing02">@dimen/_2sdp</dimen>
+    <!-- Sizing 4 -->
+    <dimen name="tokenSizing04">@dimen/_3sdp</dimen>
+    <!-- Sizing 08 -->
+    <dimen name="tokenSizing08">@dimen/_6sdp</dimen>
+    <!-- Sizing 16 -->
+    <dimen name="tokenSizing16">@dimen/_13sdp</dimen>
+    <!-- Sizing 24 -->
+    <dimen name="tokenSizing24">@dimen/_19sdp</dimen>
+    <!-- Sizing 32 -->
+    <dimen name="tokenSizing32">@dimen/_26sdp</dimen>
+    <!-- Sizing 40 -->
+    <dimen name="tokenSizing40">@dimen/_32sdp</dimen>
+    <!-- Sizing 42 -->
+    <dimen name="tokenSizing42">@dimen/_34sdp</dimen>
+    <!-- Sizing 48 -->
+    <dimen name="tokenSizing48">@dimen/_38sdp</dimen>
+    <!-- Sizing 56 -->
+    <dimen name="tokenSizing56">@dimen/_45sdp</dimen>
+    <!-- Sizing 64 -->
+    <dimen name="tokenSizing64">@dimen/_51sdp</dimen>
+    <!-- Sizing 72 -->
+    <dimen name="tokenSizing72">@dimen/_58sdp</dimen>
+    <!-- Sizing 80 -->
+    <dimen name="tokenSizing80">@dimen/_64sdp</dimen>
+    <!-- Sizing 88 -->
+    <dimen name="tokenSizing88">@dimen/_70sdp</dimen>
+    <!-- Sizing 96 -->
+    <dimen name="tokenSizing96">@dimen/_77sdp</dimen>
+    <!-- Sizing 104 -->
+    <dimen name="tokenSizing104">@dimen/_83sdp</dimen>
+    <!-- Sizing 112 -->
+    <dimen name="tokenSizing112">@dimen/_90sdp</dimen>
+    <!-- Sizing 120 -->
+    <dimen name="tokenSizing120">@dimen/_96sdp</dimen>
+    <!-- Sizing 128 -->
+    <dimen name="tokenSizing128">@dimen/_102sdp</dimen>
+    <!-- Sizing 136 -->
+    <dimen name="tokenSizing136">@dimen/_109sdp</dimen>
+    <!-- Sizing 144 -->
+    <dimen name="tokenSizing144">@dimen/_115sdp</dimen>
+    <!-- Sizing 152 -->
+    <dimen name="tokenSizing152">@dimen/_122sdp</dimen>
+    <!-- Sizing 160 -->
+    <dimen name="tokenSizing160">@dimen/_128sdp</dimen>
+    <!-- Sizing 168 -->
+    <dimen name="tokenSizing168">@dimen/_134sdp</dimen>
+    <!-- Sizing 176 -->
+    <dimen name="tokenSizing176">@dimen/_141sdp</dimen>
+    <!-- Sizing 184 -->
+    <dimen name="tokenSizing184">@dimen/_147sdp</dimen>
+    <!-- Sizing 192 -->
+    <dimen name="tokenSizing192">@dimen/_154sdp</dimen>
+    <!-- Sizing 200 -->
+    <dimen name="tokenSizing200">@dimen/_160sdp</dimen>
+</resources>

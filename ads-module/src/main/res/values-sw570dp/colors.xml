@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF0000</color>
+    <color name="colorPrimaryDark">#C90C02</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="colorPDF">#e94f37</color>
+    <color name="colorText">#ffffff</color>
+    <color name="colorText1">#b7b7b7</color>
+    <color name="colorText2">#3b3b3b</color>
+    <color name="colorText3">#000000</color>
+    <color name="colorTextBlack">#000000</color>
+    <color name="colorTextWhite">#ffffff</color>
+    <color name="colorTextGrey">#b7b7b7</color>
+
+    <color name="colorBGItem">#ffffff</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorMainBG">#252525</color>
+    <color name="colorGrey1">#3A3A3A</color>
+    <color name="colorGrey2">#939393</color>
+    <color name="colorPressItem">#33000000</color>
+
+
+</resources>

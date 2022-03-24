@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_12sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/radius_dialog_10"
+        android:padding="@dimen/_10sdp">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:indeterminateTint="@color/color_39A1FF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/txt_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:maxLines="2"
+            android:paddingStart="@dimen/_15sdp"
+            android:text="@string/hiding"
+            android:textColor="@color/color_363636"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/progressbar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.506"
+            app:minTextSize="@dimen/_12sdp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:padding="@dimen/_12sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/radius_dialog"
+        android:padding="@dimen/_15sdp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcl_selected_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginEnd="@dimen/_2sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:background="@drawable/background_bottom_ok"
+            android:padding="@dimen/_15sdp"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rcl_selected_question" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

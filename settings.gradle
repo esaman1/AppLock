@@ -1,0 +1,8 @@
+rootProject.name = "App Locker"
+include ':app'
+include ':base-module'
+include ':hiddencamera'
+include ':patternlock'
+include ':ads-module'
+include ':spotlights'
+include ':biometricauth-rxjava3'

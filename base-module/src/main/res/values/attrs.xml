@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ShadowView">
+        <attr name="svBackgroundType" format="enum">
+            <enum name="fill" value="0" />
+            <enum name="stroke" value="1" />
+            <enum name="fill_stroke" value="2" />
+        </attr>
+        <attr name="svBackgroundColorType" format="enum">
+            <enum name="solid" value="0" />
+            <enum name="gradient_linear" value="1" />
+            <enum name="gradient_radial" value="2" />
+            <enum name="gradient_sweep" value="3" />
+        </attr>
+        <attr name="svBackgroundColor" format="color" />
+        <attr name="svBackgroundGradientColor0" format="color" />
+        <attr name="svBackgroundGradientColor1" format="color" />
+        <attr name="svBackgroundGradientColor2" format="color" />
+        <attr name="svBackgroundGradientColor3" format="color" />
+        <attr name="svBackgroundGradientColor4" format="color" />
+        <attr name="svBackgroundGradientColor5" format="color" />
+        <attr name="svBackgroundGradientColor6" format="color" />
+        <attr name="svBackgroundGradientColorEnd" format="color" />
+        <attr name="svBackgroundGradientAngle" format="float" />
+        <attr name="svBackgroundGradientOffCenterX" format="float" />
+        <attr name="svBackgroundGradientOffCenterY" format="float" />
+        <attr name="svBackgroundAlpha" format="float" />
+        <attr name="svStrokeType" format="enum">
+            <enum name="solid" value="0" />
+            <enum name="dash" value="1" />
+        </attr>
+        <attr name="svStrokeColorType" format="enum">
+            <enum name="solid" value="0" />
+            <enum name="gradient_linear" value="1" />
+            <enum name="gradient_sweep" value="3" />
+        </attr>
+        <attr name="svStrokeColor" format="color" />
+        <attr name="svStrokeGradientColor0" format="color" />
+        <attr name="svStrokeGradientColor1" format="color" />
+        <attr name="svStrokeGradientColor2" format="color" />
+        <attr name="svStrokeGradientColor3" format="color" />
+        <attr name="svStrokeGradientColor4" format="color" />
+        <attr name="svStrokeGradientColor5" format="color" />
+        <attr name="svStrokeGradientColor6" format="color" />
+        <attr name="svStrokeGradientColorEnd" format="color" />
+        <attr name="svStrokeGradientAngle" format="float" />
+        <attr name="svStrokeGradientOffCenterX" format="float" />
+        <attr name="svStrokeGradientOffCenterY" format="float" />
+        <attr name="svStrokeAlpha" format="float" />
+        <attr name="svStrokeWidth" format="dimension" />
+        <attr name="svStrokeDashSize" format="dimension" />
+        <attr name="svStrokeGapSize" format="dimension" />
+        <attr name="svStrokeCapType" format="enum">
+            <enum name="square" value="0" />
+            <enum name="butt" value="1" />
+            <enum name="round" value="2" />
+        </attr>
+        <attr name="svShadowColor" format="color" />
+        <attr name="svShadowAlpha" format="float" />
+        <attr name="svShadowDistance" format="dimension" />
+        <attr name="svShadowBlur" format="dimension" />
+        <attr name="svShadowAngle" format="float" />
+        <attr name="svShadowArea" format="dimension" />
+        <attr name="svShadowLeft" format="dimension" />
+        <attr name="svShadowTop" format="dimension" />
+        <attr name="svShadowRight" format="dimension" />
+        <attr name="svShadowBottom" format="dimension" />
+        <attr name="svShadowDy" format="dimension" />
+        <attr name="svCornerType" format="enum">
+            <enum name="custom" value="0" />
+            <enum name="rectangular" value="1" />
+            <enum name="circular" value="2" />
+            <enum name="third" value="3" />
+            <enum name="quarter" value="4" />
+        </attr>
+        <attr name="svCornerTopLeft" format="dimension" />
+        <attr name="svCornerTopRight" format="dimension" />
+        <attr name="svCornerBottomLeft" format="dimension" />
+        <attr name="svCornerBottomRight" format="dimension" />
+        <attr name="svCornerRadius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="VDSCardView">
+        <!-- Corner radius for CardView. -->
+        <attr name="cvCornerRadius" format="dimension" />
+        <!-- Corner top left radius for CardView. -->
+        <attr name="cvTopLeftRadius" format="dimension" />
+        <!-- Corner top right radius for CardView. -->
+        <attr name="cvTopRightRadius" format="dimension" />
+        <!-- Corner bottom right radius for CardView. -->
+        <attr name="cvBottomRightRadius" format="dimension" />
+        <!-- Corner bottom left radius for CardView. -->
+        <attr name="cvBottomLeftRadius" format="dimension" />
+        <!--  Margin surround CardView cause of shadow layer.  -->
+        <attr name="cvShadowMargin" format="dimension" />
+        <!--  Margin left CardView cause of shadow layer  -->
+        <attr name="cvShadowMarginLeft" format="dimension" />
+        <!--  Margin top CardView cause of shadow layer  -->
+        <attr name="cvShadowMarginTop" format="dimension" />
+        <!--  Margin right CardView cause of shadow layer  -->
+        <attr name="cvShadowMarginRight" format="dimension" />
+        <!--  Margin bottom CardView cause of shadow layer  -->
+        <attr name="cvShadowMarginBottom" format="dimension" />
+        <!--  CardView type based on usages.  -->
+        <attr name="cvShadowType" format="enum">
+            <enum name="none" value="0" />
+            <enum name="card" value="1" />
+            <enum name="bottom_tab" value="2" />
+            <enum name="button_large" value="3" />
+            <enum name="button_medium" value="4" />
+            <enum name="button_small" value="5" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SmoothBottomBar">
+        <attr name="menu" format="reference" />
+        <attr name="backgroundColor" format="color" />
+        <attr name="indicatorColor" format="color" />
+        <attr name="indicatorRadius" format="dimension" />
+        <attr name="sideMargins" format="dimension" />
+        <attr name="itemPadding" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="itemFontFamily" format="reference" />
+        <attr name="textSize" format="dimension" />
+        <attr name="iconSize" format="dimension" />
+        <attr name="iconMargin" format="dimension" />
+        <attr name="iconTint" format="color"/>
+        <attr name="iconTintActive" format="color"/>
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="activeItem" format="integer" />
+        <attr name="duration" format="integer" />
+        <attr name="displayAllText" format="boolean" />
+    </declare-styleable>
+
+    <attr name="SmoothBottomBarStyle" format="reference" />
+</resources>

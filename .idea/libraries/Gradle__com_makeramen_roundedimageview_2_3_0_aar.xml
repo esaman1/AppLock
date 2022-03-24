@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="Gradle: com.makeramen:roundedimageview:2.3.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/cecdf2380aa774770cd6a505b5b8aa03/jetified-roundedimageview-2.3.0/annotations.zip!/" />
+      <root url="jar://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/f2dcabddf0c2c228cd92173705bd1947/jetified-roundedimageview-2.3.0/annotations.zip!/" />
+      <root url="jar://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/5ba394536b10e9b9cef53cbe94dff89c/jetified-roundedimageview-2.3.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/cecdf2380aa774770cd6a505b5b8aa03/jetified-roundedimageview-2.3.0/jars/classes.jar!/" />
+      <root url="file://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/cecdf2380aa774770cd6a505b5b8aa03/jetified-roundedimageview-2.3.0/res" />
+      <root url="file://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/cecdf2380aa774770cd6a505b5b8aa03/jetified-roundedimageview-2.3.0/AndroidManifest.xml" />
+      <root url="jar://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/f2dcabddf0c2c228cd92173705bd1947/jetified-roundedimageview-2.3.0/jars/classes.jar!/" />
+      <root url="file://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/f2dcabddf0c2c228cd92173705bd1947/jetified-roundedimageview-2.3.0/AndroidManifest.xml" />
+      <root url="file://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/f2dcabddf0c2c228cd92173705bd1947/jetified-roundedimageview-2.3.0/res" />
+      <root url="jar://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/5ba394536b10e9b9cef53cbe94dff89c/jetified-roundedimageview-2.3.0/jars/classes.jar!/" />
+      <root url="file://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/5ba394536b10e9b9cef53cbe94dff89c/jetified-roundedimageview-2.3.0/res" />
+      <root url="file://D:/WindowLaucher/windows-launcher/.gradle/caches/transforms-2/files-2.1/5ba394536b10e9b9cef53cbe94dff89c/jetified-roundedimageview-2.3.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/WindowLaucher/windows-launcher/.gradle/caches/modules-2/files-2.1/com.makeramen/roundedimageview/2.3.0/30a0f5d140791f4ade3ac418dddaf0d59ca694cc/roundedimageview-2.3.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/WindowLaucher/windows-launcher/.gradle/caches/modules-2/files-2.1/com.makeramen/roundedimageview/2.3.0/a74d35b08232b1e1fe0c50eeb4a27d43d6a53e1b/roundedimageview-2.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

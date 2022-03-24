@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="app_name">PatternLockView @ xyxyLiu</string>
+    <declare-styleable name="PatternLockView">
+        <attr format="integer" name="lock_size"/>
+        <attr format="dimension" name="lock_nodeSize"/>
+        <attr format="reference" name="lock_nodeOnAnim"/>
+        <attr format="dimension" name="lock_padding"/>
+        <attr format="dimension" name="lock_spacing"/>
+        <attr format="boolean" name="lock_enableVibrate"/>
+        <attr format="integer" name="lock_vibrateTime"/>
+        <attr format="color|reference" name="lock_nodeSrc"/>
+        <attr format="color|reference" name="lock_nodeHighlightSrc"/>
+        <attr format="color|reference" name="lock_nodeCorrectSrc"/>
+        <attr format="color|reference" name="lock_nodeErrorSrc"/>
+        <attr format="color" name="lock_lineColor"/>
+        <attr format="color" name="lock_lineCorrectColor"/>
+        <attr format="color" name="lock_lineErrorColor"/>
+        <attr format="dimension" name="lock_lineWidth"/>
+        <attr format="dimension" name="lock_nodeTouchExpand"/>
+        <attr format="boolean" name="lock_autoLink"/>
+    </declare-styleable>
+</resources>

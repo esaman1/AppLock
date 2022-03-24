@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AlbumActivityImage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/restore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_031B3C"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_back_restore_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/state_click_back"
+            android:padding="@dimen/_5sdp"
+            app:srcCompat="@drawable/ic_back_activity_lock_app"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:gravity="center"
+            android:paddingStart="@dimen/_8sdp"
+            android:text="@string/restore"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_19sdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ic_back_restore_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.516" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/banner"
+        app:layout_constraintTop_toBottomOf="@+id/restore">
+
+    </FrameLayout>
+
+    <com.google.android.gms.ads.ez.BannerAd
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

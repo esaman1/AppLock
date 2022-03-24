@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        android:paddingBottom="@dimen/_10sdp"
+        app:layout_constraintBottom_toTopOf="@+id/banner"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_main_lock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".activity.MainLockActivity">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/background_lock"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/bg_main_lock"
+                android:padding="@dimen/_15sdp"
+                app:layout_constraintDimensionRatio="19:10"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font"
+                    android:text="@string/app_lock"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_17sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_5sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/txt_number_app"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/font"
+                        android:text="12"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_21sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/protected_apps"
+                        android:textColor="@color/color_99FFFFFF"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcl_protected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_28sdp"
+                    android:orientation="horizontal"
+                    android:overScrollMode="never"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:listitem="@layout/layout_item_protected" />
+
+                <View
+                    android:id="@+id/btnLock"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcl_gid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:overScrollMode="never"
+                android:paddingTop="0dp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:layout_constraintTop_toBottomOf="@+id/background_lock"
+                app:spanCount="2" />
+
+            <RelativeLayout
+                android:id="@+id/ads_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                app:layout_constraintTop_toBottomOf="@+id/rcl_gid" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcl_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:overScrollMode="never"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintTop_toBottomOf="@+id/ads_view"
+                app:layout_constraintVertical_bias="0" />
+
+            <include
+                android:id="@+id/layout_rate"
+                layout="@layout/layout_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                app:layout_constraintTop_toBottomOf="@+id/rcl_linear" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.gms.ads.ez.BannerAd
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

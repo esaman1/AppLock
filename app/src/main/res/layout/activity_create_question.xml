@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CreateQuestion">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/theme_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_lock_app" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_create_question"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_back_activity_lock_app"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:gravity="center"
+            android:padding="@dimen/_15sdp"
+            android:text="@string/content_create_question"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/ic_back" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:text="@string/secret_answer_question"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/layout_question"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/background_question"
+                android:gravity="center"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                android:weightSum="10"
+                app:layout_constraintHeight_percent="0.3"
+                app:layout_constraintTop_toBottomOf="@+id/title_question">
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/txt_question"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:fontFamily="@font/font"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:textColor="@color/color_031B3C"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold"
+                    app:minTextSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/title_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:text="@string/secret_answer"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/layout_question" />
+
+            <LinearLayout
+                android:id="@+id/layout_edit_answer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:background="@drawable/background_question"
+                android:gravity="center"
+                app:layout_constraintHeight_percent="0.3"
+                app:layout_constraintTop_toBottomOf="@+id/title_answer">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/font"
+                    android:gravity="center"
+                    android:hint="@string/type_the_answer_here"
+                    android:inputType="number"
+                    android:padding="@dimen/_15sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/color_031B3C"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/background_button_create"
+            android:gravity="center"
+            android:padding="@dimen/_15sdp"
+            android:shadowRadius="23"
+            android:text="@string/save"
+            android:textColor="@color/color_363636"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.187"
+            app:layout_constraintWidth_percent="0.93"
+            tools:layout_editor_absoluteX="22dp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.02" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

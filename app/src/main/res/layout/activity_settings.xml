@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SettingsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_031B3C"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageView
+            android:id="@+id/ic_back_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/state_click_back"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_back_activity_lock_app"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/font"
+            android:gravity="center"
+            android:paddingEnd="0dp"
+            android:text="@string/setting"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_19sdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ic_back_settings"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.516" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_4D000000"
+        app:layout_constraintTop_toBottomOf="@+id/setting" />
+
+    <LinearLayout
+        android:id="@+id/layout_lock_new_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_weight="10"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/setting">
+
+
+        <ImageView
+            android:id="@+id/img_ic"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_weight="2"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_lock_new_app" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:weightSum="7">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:fontFamily="@font/font"
+                android:maxLines="1"
+                android:text="@string/lock_new_app"
+                android:textColor="@color/color_363636"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                app:minTextSize="@dimen/_12sdp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch_lock_app"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textOff=""
+                    android:textOn=""
+                    android:thumb="@drawable/thumb_lock_new_app"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:track="@drawable/track_selector" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_finger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:layout_weight="10"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/layout_lock_new_app">
+
+        <ImageView
+            android:id="@+id/img_finger"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_weight="2"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_setting_finger" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:weightSum="7">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/name_finger"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:fontFamily="@font/font"
+                android:maxLines="1"
+                android:text="@string/use_finger"
+                android:textColor="@color/color_363636"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                app:minTextSize="@dimen/_12sdp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/swich_finger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textOff=""
+                    android:textOn=""
+                    android:thumb="@drawable/thumb_lock_new_app"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:track="@drawable/track_selector" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rclSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@+id/layout_finger" />
+
+    <RelativeLayout
+        android:id="@+id/ads_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        app:layout_constraintBottom_toTopOf="@+id/banner"
+        app:layout_constraintTop_toBottomOf="@+id/rclSetting" />
+
+    <com.google.android.gms.ads.ez.BannerAd
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

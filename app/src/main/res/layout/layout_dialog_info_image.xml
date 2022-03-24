@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_15sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/radius_dialog_10"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/txt_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:text="@string/information"
+            android:textColor="@color/color_363636"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:weightSum="7"
+            app:layout_constraintTop_toBottomOf="@+id/txt_info">
+
+            <me.grantland.widget.AutofitTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/name"
+                android:textColor="@color/color_5B5B5B"
+                android:textSize="@dimen/_11sdp"
+                app:minTextSize="@dimen/_10sdp" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/txt_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:maxLines="2"
+                android:text="@string/name"
+                android:textColor="@color/color_363636"
+                android:textSize="@dimen/_12sdp"
+                app:minTextSize="@dimen/_10sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:weightSum="7"
+            app:layout_constraintTop_toBottomOf="@+id/layout_name">
+
+            <me.grantland.widget.AutofitTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/size"
+                android:textColor="@color/color_5B5B5B"
+                android:textSize="@dimen/_11sdp"
+                app:minTextSize="@dimen/_10sdp" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/txt_size"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:maxLines="1"
+                android:text="@string/name"
+                android:textColor="@color/color_363636"
+                android:textSize="@dimen/_12sdp"
+                app:minTextSize="@dimen/_10sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:weightSum="7"
+            app:layout_constraintTop_toBottomOf="@+id/layout_size">
+
+            <me.grantland.widget.AutofitTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/date"
+                android:textColor="@color/color_5B5B5B"
+                android:textSize="@dimen/_11sdp"
+                app:minTextSize="@dimen/_10sdp" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/txt_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:maxLines="1"
+                android:text="@string/name"
+                android:textColor="@color/color_363636"
+                android:textSize="@dimen/_12sdp"
+                app:minTextSize="@dimen/_10sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:weightSum="7"
+            app:layout_constraintTop_toBottomOf="@+id/layout_date">
+
+            <me.grantland.widget.AutofitTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/path"
+                android:textColor="@color/color_5B5B5B"
+                android:textSize="@dimen/_11sdp"
+                app:minTextSize="@dimen/_10sdp" />
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/txt_path"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:maxLines="2"
+                android:text="@string/name"
+                android:textColor="@color/color_363636"
+                android:textSize="@dimen/_11sdp"
+                app:minTextSize="@dimen/_10sdp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:text="@string/done"
+            android:textColor="@color/color_39A1FF"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_path" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

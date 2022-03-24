@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".activity.ShowImage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/show_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_031B3C"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageView
+            android:id="@+id/ic_back_show_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/state_click_back"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_back_activity_lock_app"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/namr_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/font"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/album"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ic_back_show_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.516"
+            app:minTextSize="@dimen/_1sdp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.ezteam.applocker.widget.ZoomLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/layout_btn"
+        app:layout_constraintTop_toBottomOf="@+id/show_image">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/can_t_open_because_memory_is_not_enough"
+            android:textColor="@color/color_363636"
+            android:textSize="@dimen/_12sdp" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter" />
+    </com.ezteam.applocker.widget.ZoomLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        android:weightSum="8"
+        app:layout_constraintBottom_toTopOf="@+id/banner">
+
+        <ImageView
+            android:id="@+id/ic_delete"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:src="@drawable/ic_delete" />
+
+        <ImageView
+            android:id="@+id/ic_lock"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:src="@drawable/ic_lock_image" />
+
+        <ImageView
+            android:id="@+id/ic_circle_fill"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:src="@drawable/ic_circle_fill" />
+    </LinearLayout>
+
+    <com.google.android.gms.ads.ez.BannerAd
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

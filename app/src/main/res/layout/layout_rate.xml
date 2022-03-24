@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_rates"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/_15sdp"
+    android:paddingBottom="@dimen/_15sdp">
+
+    <LinearLayout
+        android:id="@+id/layout_title_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_8sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_img_view_rate" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:text="@string/rate_us_message"
+            android:textColor="@color/color_363636"
+            android:textSize="@dimen/_12sdp" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textStyle="bold"
+        android:id="@+id/button_rate"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/button_background_app_color"
+        android:gravity="center"
+        android:text="@string/rate_now"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_title_rate"
+        app:layout_constraintWidth_percent="0.55" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_12sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/radius_dialog_question"
+        android:padding="@dimen/_15sdp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txt_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:text="@string/incorrect_answer"
+                android:textColor="@color/color_FF7777"
+                android:visibility="gone"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/title_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:text="@string/secret_answer_question"
+                android:textColor="@color/color_363636"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/txt_error" />
+
+            <LinearLayout
+                android:id="@+id/layout_question"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_55sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/background_question"
+                android:gravity="center"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                android:weightSum="10"
+                app:layout_constraintTop_toBottomOf="@+id/title_question">
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/txt_question"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:fontFamily="@font/font"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:textColor="@color/color_031B3C"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold"
+                    app:minTextSize="@dimen/_10sdp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/title_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:text="@string/secret_answer"
+                android:textColor="@color/color_363636"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/layout_question" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_55sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/background_question"
+                android:gravity="center"
+                android:padding="@dimen/_15sdp"
+                app:layout_constraintTop_toBottomOf="@+id/title_answer">
+
+                <EditText
+                    android:id="@+id/edt_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/font"
+                    android:gravity="center"
+                    android:hint="@string/type_the_answer_here"
+                    android:inputType="number"
+                    android:textColor="@color/color_031B3C"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:background="@drawable/background_bottom_ok"
+            android:padding="@dimen/_15sdp"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_edit" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

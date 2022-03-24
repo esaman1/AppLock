@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/App_Locker.iml" filepath="$PROJECT_DIR$/.idea/modules/App_Locker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ads-module/App_Locker.ads-module.iml" filepath="$PROJECT_DIR$/.idea/modules/ads-module/App_Locker.ads-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/App_Locker.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/App_Locker.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/base-module/App_Locker.base-module.iml" filepath="$PROJECT_DIR$/.idea/modules/base-module/App_Locker.base-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/biometricauth-rxjava3/App_Locker.biometricauth-rxjava3.iml" filepath="$PROJECT_DIR$/.idea/modules/biometricauth-rxjava3/App_Locker.biometricauth-rxjava3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hiddencamera/App_Locker.hiddencamera.iml" filepath="$PROJECT_DIR$/.idea/modules/hiddencamera/App_Locker.hiddencamera.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/patternlock/App_Locker.patternlock.iml" filepath="$PROJECT_DIR$/.idea/modules/patternlock/App_Locker.patternlock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spotlights/App_Locker.spotlights.iml" filepath="$PROJECT_DIR$/.idea/modules/spotlights/App_Locker.spotlights.iml" />
+    </modules>
+  </component>
+</project>

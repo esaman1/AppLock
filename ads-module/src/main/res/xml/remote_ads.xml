@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+
+
+    <entry>
+        <key>time_show_ads</key>
+        <value>40</value>
+    </entry>
+
+    <entry>
+        <key>max_show_day</key>
+        <value>30</value>
+    </entry>
+    <entry>
+        <key>count_show_ads</key>
+        <value>1</value>
+    </entry>
+
+    <entry>
+        <key>admob_banner_id</key>
+        <value>ca-app-pub-3695840350719243/1820083285</value>
+    </entry>
+    <entry>
+        <key>admob_inter_id</key>
+        <value>ca-app-pub-3695840350719243/1699528319</value>
+    </entry>
+    <entry>
+        <key>admob_native_id</key>
+        <value>ca-app-pub-3695840350719243/4063103246</value>
+    </entry>
+    <entry>
+        <key>admob_open_id</key>
+        <value>ca-app-pub-3695840350719243/6497694894</value>
+    </entry>
+
+
+    <entry>
+        <key>adx_banner_id</key>
+        <value>/112517806,22572584312/1741635759043</value>
+    </entry>
+    <entry>
+        <key>adx_inter_id</key>
+        <value>/112517806,22572584312/3271635759054</value>
+    </entry>
+    <entry>
+        <key>adx_native_id</key>
+        <value>/112517806,22572584312/5141635759080</value>
+    </entry>
+    <entry>
+        <key>adx_open_id</key>
+        <value>/112517806,22572584312/7431635759093</value>
+    </entry>
+
+
+    <entry>
+        <key>fb_inter_id</key>
+        <value>221998715931973_222007112597800</value>
+    </entry>
+    <entry>
+        <key>fb_banner_id</key>
+        <value>221998715931973_222007839264394</value>
+    </entry>
+    <entry>
+        <key>fb_native_id</key>
+        <value>xxx</value>
+    </entry>
+
+
+    <entry>
+        <key>applovin_inter_id</key>
+        <value>4f3c91ac84cf9a21</value>
+    </entry>
+    <entry>
+        <key>applovin_banner_id</key>
+        <value>249b3891610b7e6a</value>
+    </entry>
+    <entry>
+        <key>applovin_rewarded_id</key>
+        <value>8a24e5b04e6fdf66</value>
+    </entry>
+
+    <entry>
+        <key>current_version</key>
+        <value>1</value>
+    </entry>
+    <entry>
+        <key>count_show_ads</key>
+        <value>1</value>
+    </entry>
+    <entry>
+        <key>master_ads_network</key>
+        <value>admob,facebook,adx,applovin</value>
+    </entry>
+
+</defaultsMap>

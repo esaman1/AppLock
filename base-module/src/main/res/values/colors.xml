@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Black-->
+    <color name="tokenBlack08">#ebebeb</color>
+    <color name="tokenBlack05">#0D000000</color>
+    <color name="tokenBlack10">#1A000000</color>
+    <color name="tokenBlack20">#33000000</color>
+    <color name="tokenBlack30">#4D000000</color>
+    <color name="tokenBlack40">#66000000</color>
+    <color name="tokenBlack50">#80000000</color>
+    <color name="tokenBlack60">#99000000</color>
+    <color name="tokenBlack70">#B3000000</color>
+    <color name="tokenBlack80">#CC000000</color>
+    <color name="tokenBlack90">#E6000000</color>
+    <color name="tokenBlack100">#FF000000</color>
+
+    <!--White-->
+    <color name="tokenWhite10">#1AFFFFFF</color>
+    <color name="tokenWhite20">#33FFFFFF</color>
+    <color name="tokenWhite30">#4DFFFFFF</color>
+    <color name="tokenWhite40">#66FFFFFF</color>
+    <color name="tokenWhite50">#80FFFFFF</color>
+    <color name="tokenWhite60">#99FFFFFF</color>
+    <color name="tokenWhite70">#B3FFFFFF</color>
+    <color name="tokenWhite80">#CCFFFFFF</color>
+    <color name="tokenWhite90">#E6FFFFFF</color>
+    <color name="tokenWhite100">#FFFFFFFF</color>
+
+    <color name="gplus_color_1">#3e802f</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#427fed</color>
+    <color name="gplus_color_4">#b23424</color>
+
+    <integer-array name="gplus_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+        <item>@color/gplus_color_4</item>
+    </integer-array>
+
+    <color name="text_color">#1B1B1B</color>
+    <color name="text_title_color">#252525</color>
+</resources>

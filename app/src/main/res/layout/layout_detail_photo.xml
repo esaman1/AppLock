@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ezteam.applocker.widget.SquareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="@dimen/_1sdp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_detail_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:id="@+id/layout_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/background_black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.35"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/txt_number"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/cycle_check"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</com.ezteam.applocker.widget.SquareRelativeLayout>
